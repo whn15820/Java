@@ -92,4 +92,11 @@ public abstract class UserDao {
     public User FindUser (Object param) {
         return FindUser(param, FILTER_MODE.BY_USERID_OR_USERNAME);
     }
+
+    /**
+     * Update user by it id (in object)
+     * @param user User info to update
+     * @return affected rows
+     */
+    abstract public int UpdateUser (User user);
 }

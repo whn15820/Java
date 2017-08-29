@@ -4,7 +4,10 @@ import io.ntzyz.mybatis.dao.*;
 import io.ntzyz.mybatis.dao.impl.*;
 import io.ntzyz.mybatis.pojo.*;
 
-public class UserDaoImplTest {
+/**
+ * 所有数据查询测试+插入测试+删除测试
+ */
+public class TestCase4 {
     public static void main(String[] args) {
         UserDao userDao = new UserDaoImpl();
 
@@ -16,7 +19,7 @@ public class UserDaoImplTest {
         System.out.println("");
 
         System.out.println("## After insert:");
-        User newUser = new User("lover", "fuckhere");
+        User newUser = new User("233", "666");
         userDao.AddUser(newUser);
         users = userDao.ListAll();
         for (User user : users) {

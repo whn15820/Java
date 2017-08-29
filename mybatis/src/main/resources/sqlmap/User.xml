@@ -11,4 +11,7 @@
     <select id="ListAll" resultType="io.ntzyz.mybatis.pojo.User">
         SELECT <include refid="cols"/> FROM user
     </select>
+    <update id="UpdateUser">
+
+    </update>
 </mapper>

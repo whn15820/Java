@@ -70,4 +70,8 @@ public class UserDaoImpl extends UserDao {
 
         return result;
     }
+
+    public int UpdateUser(User user) {
+        return DbTools.ExecuteUpdate("UPDATE user SET username = ?, password = ? WHERE id = ?", new Object[] { user.Username, user.Password, user.UserID });
+    }
 }
